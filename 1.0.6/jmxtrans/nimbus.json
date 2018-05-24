@@ -1,0 +1,504 @@
+{
+	"servers": [{
+		"numQueryThreads": 8,
+		"alias": "nimbus-NIMBUS_IP",
+		"host": "localhost",
+		"port": 2255,
+		"queries": [{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-activate-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			}, {
+				"obj": "metrics:name=*",
+				"resultAlias": "num-beginFileDownload-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-beginFileUpload-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-deactivate-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-debug-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-downloadChunk-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-finishFileUpload-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getClusterInfo-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getComponentPageInfo-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getComponentPendingProfileActions-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getLeader-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getLogConfig-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getNimbusConf-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getSupervisorPageInfo-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getTopology-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getTopologyConf-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getTopologyInfo-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getTopologyInfoWithOpts-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getTopologyPageInfo-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-getUserTopology-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-isTopologyNameAllowed-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-killTopology-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-killTopologyWithOpts-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-rebalance-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-setLogConfig-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-setWorkerProfiler-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-shutdown-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-submitTopology-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-submitTopologyWithOpts-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-uploadChunk-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			},
+			{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-uploadNewCredentials-calls",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.nimbus.app"
+					}
+				}]
+			}
+		]
+	}]
+}
