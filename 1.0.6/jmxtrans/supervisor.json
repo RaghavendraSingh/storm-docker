@@ -1,0 +1,25 @@
+{
+	"servers": [{
+		"numQueryThreads": 8,
+		"alias": "supervisor-SUPERVISOR_IP",
+		"host": "localhost",	
+		"port": 2256,
+		"queries": [{
+				"obj": "metrics:name=*",
+				"resultAlias": "num-slots-used-gauge",
+				"attr": [
+					"Value"
+				],
+				"outputWriters": [{
+					"@class": "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+					"settings": {
+						"typeNames": [],
+						"host": "GRAPHITE_HOST",
+						"port": GRAPHITE_PORT,
+						"rootPrefix": "INSTALL_TAG.azure.supervisor.app"
+					}
+				}]
+			}
+		]
+	}]
+}

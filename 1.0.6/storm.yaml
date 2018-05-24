@@ -11,8 +11,9 @@
   storm.log.dir: "LOG_DIR"
   storm.local.dir: "DATA_DIR"
   nimbus.thrift.max_buffer_size: 200048576
-  #worker.childopts: "-Xmx8192m -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=1%ID%"
-  worker.childopts: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=1%ID%"
+  nimbus.childopts: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=2255 -Djava.rmi.server.hostname=localhost"
+  worker.childopts: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=1%ID% -Djava.rmi.server.hostname=localhost"
+  supervisor.childopts: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=2256 -Djava.rmi.server.hostname=localhost"
   # Controls the time interval between metric reports
   topology.builtin.metrics.bucket.size.secs: 60
   #dev.zookeeper.path: "/data/user-storm-zookeeper"
